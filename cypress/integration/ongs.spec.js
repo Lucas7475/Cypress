@@ -9,9 +9,9 @@ import NewIncident from '../support/pages/NewIncident';
 describe('Ongs', () =>{
 
     it('Teste de acesso', ()=>{
-        cy.visit('https://br-playground.digitalhouse.com/login');
-        cy.get('.auth-page__card').click();
-        cy.get('[data-testid=emailInput]').click();
+        cy.visit('https://br-playground.digitalhouse.com/login',{timeout:10000});
+        cy.get('.auth-page__card').click({timeout:10000});
+        cy.get('[data-testid=emailInput]').click({timeout:10000});
         cy.get('[data-testid=emailInput]').type('emial@email');
         cy.get('[data-testid=pwInput]').type('123456');
         cy.get('[data-testid=submitButton]').click();
