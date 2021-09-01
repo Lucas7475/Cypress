@@ -9,14 +9,7 @@ import NewIncident from '../support/pages/NewIncident';
 describe('Ongs', () =>{
 
     it('Teste de acesso', ()=>{
-        cy.visit('https://br-playground.digitalhouse.com/login',{timeout:10000});
-        cy.get('.auth-page__card').click({timeout:10000});
-        cy.get('[data-testid=emailInput]').click({timeout:10000});
-        cy.get('[data-testid=emailInput]').type('emial@email');
-        cy.get('[data-testid=pwInput]').type('123456');
-        cy.get('[data-testid=submitButton]').click();
-        cy.get('form').submit();
-        cy.get('.message-box__message').click();
+        cy.visit('https://www.rotaonline.com.br/PerforMAXXI/LoginPerforMAXXI.aspx',{timeout:10000});
     })
 
     //comando que inicia um teste
